@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   get 'aboutpage' , to: 'pages#aboutpage'
 
-  resources :articles , only: [:show , :index ]
+  resources :articles , only: [:show , :index , :new , :create ]
 end
