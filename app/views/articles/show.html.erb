@@ -1,3 +1,7 @@
 <h1>SHOW Article</h1>
 <h3>title : <%= @article.title %></h3>
 <h3>description : <%= @article.description %></h3>
+
+<%= link_to 'EDIT' ,edit_article_path(@article)%> |
+<%= link_to 'DELETE' ,article_path(@article), method: :delete , data: {confirm:"Are you sure you want to delete"}%> |
+<%= link_to 'Return to home' ,articles_path %>
